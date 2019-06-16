@@ -1,0 +1,10 @@
+.image{
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    top: 10%;
+    left: 35%;
+}
+
+.image:hover{
+}

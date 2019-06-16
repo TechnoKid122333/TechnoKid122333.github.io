@@ -1,0 +1,99 @@
+body{
+    background: url(bgs1\ \(16\).jpg);
+    background-size: cover;
+}
+
+.image{
+    filter: grayscale();
+    color: red;
+    position: absolute;
+    top: 20px;
+    left: 630px;
+    background:white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: 2
+}
+
+.log-in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 1;
+    border: 3px solid white;
+    height: 500px;
+    width: 370px;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(30, 177, 182);
+    z-index: 1;
+}
+
+h2{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.acc{
+    font-size: 16px;
+    color:  #6ab04c;
+}
+
+.forgot-password{
+    font-size: 16px;
+    color:  #6ab04c;
+}
+
+.log-in .inputbox{
+    position: relative;
+}
+
+.log-in .inputbox input{
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.log-in .inputbox label{
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16;
+    transition: .5s;
+}
+
+.log-in .inputbox input:focus ~ label,
+.log-in .inputbox input:valid ~ label{
+    top: -25px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.log-in .inputbox input[type="submit"]{
+    position: relative;
+    left: 18px;
+    border-radius: 40px;
+    background: rgb(0, 162, 255);
+    width: 90%;
+    visibility: visible;
+}

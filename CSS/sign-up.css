@@ -1,0 +1,94 @@
+body{
+    background: url(bgs1\ \(16\).jpg);
+    background-size: cover;
+}
+
+.image{
+    filter: grayscale();
+    color: red;
+    position: absolute;
+    top: 20px;
+    left: 630px;
+    background:white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: 2
+}
+
+.sign-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 1;
+    border: 3px solid white;
+    height: 500px;
+    width: 370px;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(30, 177, 182);
+    z-index: 1;
+}
+
+h2{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.lgn{
+    font-size: 16px;
+    color:  #6ab04c;
+}
+
+.sign-up .inputbox{
+    position: relative;
+}
+
+.sign-up .inputbox input{
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.sign-up .inputbox label{
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16;
+    transition: .5s;
+}
+
+.sign-up .inputbox input:focus ~ label,
+.sign-up .inputbox input:valid ~ label{
+    top: -25px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.sign-up .inputbox input[type="submit"]{
+    position: relative;
+    left: 18px;
+    border-radius: 40px;
+    background: rgb(0, 162, 255);
+    width: 90%;
+    visibility: visible;
+}
